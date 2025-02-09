@@ -1,4 +1,4 @@
-# Virtual environments
+# Virtual environments to ignore
 venv/
 env/
 ENV/
