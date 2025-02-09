@@ -1,22 +1,51 @@
+# Virtual environments
 venv/
+env/
+ENV/
+.venv/
+.ENV/
+
+# Python compiled files
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+
+# macOS specific files
 .DS_Store
-.idea/
+
+# Log files
 *.log
+
+# SQLite database files
 *.sqlite3
+
+# Database files
 *.db
+
+# Data files
 *.dat
+
+# CSV files
 *.csv
+
+# HDF5 files
 *.h5
 *.hdf5
+
+# Model files
 *.model
+
+# Joblib files
 *.joblib
+
+# Pickle files
 *.pkl
-*.ipynb_checkpoints/
-# Exclude libraries installed by pip
+
+# PyCharm project files
+.idea/
+
+# Libraries installed by pip
 lib/
 bin/
 share/
