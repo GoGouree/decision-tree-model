@@ -26,9 +26,6 @@ __pycache__/
 # Data files
 *.dat
 
-# CSV files
-*.csv
-
 # HDF5 files
 *.h5
 *.hdf5

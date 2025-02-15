@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load the dataset using an absolute path
-data = pd.read_csv('C:/Users/goure/decision-tree-model/data/raw/Sample_Data.csv')
+data = pd.read_csv('C:/Users/goure/decision-tree-model/data/training dataset/synthetic_fraud_data.csv')
 
 # Display basic information about the dataset
 print("Basic Information:")

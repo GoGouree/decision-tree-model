@@ -55,25 +55,3 @@ plt.title('Confusion Matrix')
 plt.xlabel('Predicted')
 plt.ylabel('Actual')
 plt.show()
-
-# Load new data for prediction
-new_data = pd.read_csv('C:/Users/goure/decision-tree-model/data/prediction_dataset/new_data.csv')
-
-# Preprocess the new data (ensure it matches the training data preprocessing)
-new_data_preprocessed = pd.get_dummies(new_data, drop_first=True)
-
-# Ensure the new data has the same columns as the training data
-missing_cols = set(X_train.columns) - set(new_data_preprocessed.columns)
-for col in missing_cols:
-    new_data_preprocessed[col] = 0
-new_data_preprocessed = new_data_preprocessed[X_train.columns]
-
-# Make predictions on the new data
-new_predictions = clf.predict(new_data_preprocessed)
-
-# Add predictions to the new data
-new_data['Predicted_Fraud'] = new_predictions
-
-# Save the new data with predictions
-new_data.to_csv('C:/Users/goure/decision-tree-model/data/prediction_dataset/new_data_with_predictions.csv', index=False)
-print("Predictions saved to new_data_with_predictions.csv")
